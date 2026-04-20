@@ -840,8 +840,8 @@
 	<div class="controls">
 		{#if timeRange.mode === 'realtime'}
 			<div class="control-group">
-				<label class="control-label">Time Range</label>
-				<select class="control-select" value={timeRange.preset} onchange={handlePresetChange}>
+				<label class="control-label" for="chart-time-range">Time Range</label>
+				<select id="chart-time-range" class="control-select" value={timeRange.preset} onchange={handlePresetChange}>
 					{#each REALTIME_PRESETS as preset}
 						<option value={preset}>{PRESET_LABELS[preset]}</option>
 					{/each}
@@ -887,8 +887,8 @@
 		{/if}
 
 		<div class="control-group">
-			<label class="control-label">Samples</label>
-			<select class="control-select control-select--small" bind:value={samples}>
+			<label class="control-label" for="chart-samples">Samples</label>
+			<select id="chart-samples" class="control-select control-select--small" bind:value={samples}>
 				{#each samplePresets as preset}
 					<option value={preset}>{preset}</option>
 				{/each}
