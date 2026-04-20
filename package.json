@@ -1,6 +1,6 @@
 {
   "name": "@joyautomation/cortex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared Svelte SCADA component library for the Kraken stack — charts, trees, and process control visualization",
   "license": "GPL-3.0-or-later",
   "type": "module",
